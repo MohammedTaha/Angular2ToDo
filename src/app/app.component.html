@@ -1,3 +1,29 @@
-<h1>
-  {{title}}
-</h1>
+<div>
+
+
+  <section id="todoListContainer">
+    <header id="todoListHeader">
+      <h2> ToDo List </h2>
+    </header>
+    <article id="todoListBody">
+
+
+      <ul id="tasksList">
+        <list-item></list-item>
+        <list-item></list-item>
+        <list-item></list-item>
+        <list-item></list-item>
+        <list-item></list-item>
+      </ul>
+
+
+      <footer id="newTaskContainer">
+        <div id="checkBoxPlaceHolder"><br/></div>
+        <div id="taskDescPlaceHolder">     
+          <input type="text" id="txtNewTask" placeholder="Type your task..." (keypress) = "onKeyPress($event)">
+        </div>
+      </footer>
+    </article>
+  </section>
+
+</div>

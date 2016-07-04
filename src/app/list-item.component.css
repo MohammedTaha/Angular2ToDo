@@ -1,0 +1,30 @@
+li.todoItem {
+    border-bottom: 1px solid lightgray;
+    line-height: 3em;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.07em;
+    text-shadow: 0 0 3px grey;
+    margin-bottom: -2px;
+}
+.todoItem .checkBoxContainer{
+    display: inline-block;
+    width: 15%;
+    text-align: center;
+    border-right: 1px solid #fb7f7f;
+}
+.checkBoxContainer input{
+    -ms-transform: scale(2); /* IE */
+    -moz-transform: scale(2); /* FF */
+    -webkit-transform: scale(2); /* Safari and Chrome */
+    -o-transform: scale(2); /* Opera */
+}
+.todoItem .taskDescContainer{
+    display: inline-block;
+    width: 74%;
+    text-align: center;
+    border-left: 1px solid #fb7f7f;
+    margin-left: -4px;
+}
+
