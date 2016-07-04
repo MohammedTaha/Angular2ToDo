@@ -15,7 +15,10 @@ export class NewTodoComponent implements OnInit {
   onKeyPress(e: KeyboardEvent): void {
     let self: any = e.target;
     if (e.which == 13) {
-      this.todoUtilService.addTodoItem(new TODO(self.value.trim(), false));
+      let taskDescription = self.value.trim();
+      if(taskDescription){
+        this.todoUtilService.addTodoItem(new TODO(self.value.trim(), false));
+      }
       self.value = "";
     }
   }

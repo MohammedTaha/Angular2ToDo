@@ -1,7 +1,7 @@
-<li class="todoItem">
+<li class="todoItem" [ngClass] = "{ 'isDone' : todo.isDone}">
   <label>
     <div class="checkBoxContainer">
-      <input type="checkbox" >
+      <input type="checkbox" [disabled] = "todo.isDone" (change) = "updateTaskStatus()" >
     </div>
     <div class="taskDescContainer">
         {{todo.description}}

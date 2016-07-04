@@ -27,4 +27,6 @@ li.todoItem {
     
     margin-left: -4px;
 }
-
+.todoItem.isDone .taskDescContainer{
+    text-decoration: line-through;
+}

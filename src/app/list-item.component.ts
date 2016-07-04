@@ -9,4 +9,8 @@ import { Component, Input } from '@angular/core';
 
 export class ListItemComponent {
   @Input("todo") todo;
+
+  updateTaskStatus():void{
+    this.todo.isDone = !this.todo.isDone;
+  }
 }
