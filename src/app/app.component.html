@@ -9,18 +9,15 @@
 
 
       <ul id="tasksList">
-        <list-item></list-item>
-        <list-item></list-item>
-        <list-item></list-item>
-        <list-item></list-item>
-        <list-item></list-item>
+        <div *ngFor="let todo of todos">
+          <list-item [todo]="todo"></list-item>
+        </div>
       </ul>
 
 
       <footer id="newTaskContainer">
-        <div id="checkBoxPlaceHolder"><br/></div>
         <div id="taskDescPlaceHolder">     
-          <input type="text" id="txtNewTask" placeholder="Type your task..." (keypress) = "onKeyPress($event)">
+          <new-todo></new-todo>
         </div>
       </footer>
     </article>

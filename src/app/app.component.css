@@ -24,22 +24,26 @@
 }
 #todoListBody{
     background-color: #F5F6F7;
-    border-radius: 0 0 0.25em 0.25em;
-    margin-top: -5px;
+    box-shadow:
+        0 1px 1px rgba(0,0,0,0.15), /* The top layer shadow */
+        0 10px 0 -5px #eee, /* The second layer */
+        0 10px 1px -4px rgba(0,0,0,0.15), /* The second layer shadow */
+        0 20px 0 -10px #eee, /* The third layer */
+        0 20px 1px -9px rgba(0,0,0,0.15); /* The third layer shadow */
 }
 
 #tasksList {
     list-style: none;
     padding-left: 0;
-    margin-top : -10px;
-    margin-bottom : 1px;
+    margin : 0px;
+    max-height: 25em;
+    overflow-y: hidden;
 }
 #checkBoxPlaceHolder{
     display: inline-block;
     line-height: 2em;
-    width: 15%;
+    width: 14.6%;
     text-align: center;
-    border-right: 1px solid #fb7f7f;
     padding-top: 1.2em;
     padding-bottom: 1.95em;
 }
@@ -47,15 +51,8 @@
     display: inline-block;
     width: 74%;
     text-align: center;
-    border-left: 1px solid #fb7f7f;
-    margin-left: -2.5px;
+    border-left: 3px double #fb7f7f;
+    margin-left: 15%;
     padding-top: 1em;
     padding-bottom: 1.5em;
-}
-#txtNewTask{
-    line-height: 2em;
-    width : 80%;
-    padding: 0.5em;
-    background-color : "lightgray";
-    border-radius : 0.35em;
 }

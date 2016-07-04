@@ -12,7 +12,7 @@ li.todoItem {
     display: inline-block;
     width: 15%;
     text-align: center;
-    border-right: 1px solid #fb7f7f;
+    border-right: 3px double #fb7f7f;
 }
 .checkBoxContainer input{
     -ms-transform: scale(2); /* IE */
@@ -24,7 +24,7 @@ li.todoItem {
     display: inline-block;
     width: 74%;
     text-align: center;
-    border-left: 1px solid #fb7f7f;
+    
     margin-left: -4px;
 }
 
