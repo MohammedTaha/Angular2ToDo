@@ -2,7 +2,7 @@ import { Component , OnInit } from '@angular/core';
 import {ListItemComponent} from "./list-item.component";
 import {NewTodoComponent} from "./new-todo.component";
 import {TodoUtilService} from "./todo-util.service";
-import {TODO} from "./models/toDo.model";
+import {TODO} from "./toDo.model";
 
 @Component({
   moduleId: module.id,
@@ -13,6 +13,8 @@ import {TODO} from "./models/toDo.model";
 })
 
 export class AppComponent implements OnInit{
+
+  title = "app works!";
 
   public todos:TODO[];
   constructor(private todoUtilService:TodoUtilService){

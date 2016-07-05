@@ -10,7 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var todo_util_service_1 = require("./todo-util.service");
-var toDo_model_1 = require("./models/toDo.model");
+var toDo_model_1 = require("./toDo.model");
 var NewTodoComponent = (function () {
     function NewTodoComponent(todoUtilService) {
         this.todoUtilService = todoUtilService;

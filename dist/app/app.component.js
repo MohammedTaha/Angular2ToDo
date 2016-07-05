@@ -15,6 +15,7 @@ var todo_util_service_1 = require("./todo-util.service");
 var AppComponent = (function () {
     function AppComponent(todoUtilService) {
         this.todoUtilService = todoUtilService;
+        this.title = "app works!";
         this.todos = [];
     }
     AppComponent.prototype.ngOnInit = function () {

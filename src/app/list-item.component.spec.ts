@@ -12,9 +12,9 @@ import {
 
 import { ListItemComponent } from './list-item.component';
 
-describe('Component: ListItem', () => {
+/*describe('Component: ListItem', () => {
   it('should create an instance', () => {
     let component = new ListItemComponent();
     expect(component).toBeTruthy();
   });
-});
+});*/
